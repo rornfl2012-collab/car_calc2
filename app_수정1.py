@@ -118,7 +118,7 @@ ab = st.selectbox("A/B/C 선택", ["A","B","C"])
 col1, col2 = st.columns([3,1])
 
 with col1:
-    clicked = st.button("계산(현 차량가기준)")
+    clicked = st.button("하락예상액 계산(현 차량가기준)")
 
 with col2:
     st.markdown(f"<div style='margin-top:8px;'>남은횟수: {get_remaining()}회</div>", unsafe_allow_html=True)
