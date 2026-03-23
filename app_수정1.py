@@ -179,7 +179,8 @@ st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
 # -------------------------
 # 주요골격
 # -------------------------
-st.markdown(f"<h3 style='color:blue; font-weight:bold; font-size:{SUBTITLE_SIZE}px;'>주요골격</h3>", unsafe_allow_html=True)
+#st.markdown(f"<h3 style='color:blue; font-weight:bold; font-size:{SUBTITLE_SIZE}px;'>주요골격</h3>", unsafe_allow_html=True)
+st.markdown(f"<h3 style='color:blue; font-weight:bold; font-size:{SUBTITLE_SIZE}px;'>주요골격 <span style='font-weight:normal;'>외판</span></h3>", unsafe_allow_html=True)
 
 st.markdown(f"""
 <div style="font-size:{TEXT_SIZE}px;">
