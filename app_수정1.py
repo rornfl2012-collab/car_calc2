@@ -146,8 +146,24 @@ if clicked:
 """)
 
 # 👉 항상 보이게 (핵심 수정)
-st.link_button("오픈챗 상담", "https://open.kakao.com/o/sruGURAg")
-st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
+#st.link_button("오픈챗 상담", "https://open.kakao.com/o/sruGURAg")
+#st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
+
+st.markdown("""
+<div style="display:flex; gap:10px; margin-top:10px;">
+<a href="https://open.kakao.com/o/sruGURAg" target="_blank"
+style="flex:1; text-align:center; padding:12px; background-color:#00c73c; color:white; 
+text-decoration:none; border-radius:8px; font-weight:bold;">
+오픈챗 상담
+</a>
+
+<a href="https://open.kakao.com/o/sruGURAg" target="_blank"
+style="flex:1; text-align:center; padding:12px; background-color:#ff5722; color:white; 
+text-decoration:none; border-radius:8px; font-weight:bold;">
+평가서 발행 요청
+</a>
+</div>
+""", unsafe_allow_html=True)
 
 # -------------------------
 # 주요골격
