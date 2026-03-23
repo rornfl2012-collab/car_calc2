@@ -1,6 +1,3 @@
-
-
-
 import streamlit as st
 import datetime
 import time
@@ -45,7 +42,7 @@ def check_license():
     return True
 
 def get_remaining():
-    return LIMIT_COUNT - count
+    return max(0, LIMIT_COUNT - count)
 
 # -------------------------
 # 표1
@@ -115,12 +112,9 @@ accident_date = st.date_input("사고일자")
 car = st.text_input("차량명")
 model = st.text_input("모델")
 fuel = st.selectbox("유종", ["", "휘발유","경유","하이브리드","전기"])
-
 price = st.number_input("차량가 (만원)", step=100, format="%d")
-
 ab = st.selectbox("A/B/C 선택", ["A","B","C"])
 
-# 버튼 + 남은횟수
 col1, col2 = st.columns([3,1])
 
 with col1:
@@ -129,11 +123,12 @@ with col1:
 with col2:
     st.markdown(f"<div style='margin-top:8px;'>남은횟수: {get_remaining()}회</div>", unsafe_allow_html=True)
 
+# 결과 영역
 if clicked:
     ok = check_license()
 
     if not ok:
-        st.error("사용횟수[기한] 초과")
+        st.error("사용[횟수]기한 초과")
     else:
         with st.spinner("계산중..."):
             time.sleep(2)
@@ -150,9 +145,9 @@ if clicked:
 격락손해예상액: {result}만원
 """)
 
-        # 버튼 위치 이동
-        st.link_button("오픈챗 상담", "https://open.kakao.com/o/sruGURAg")
-        st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
+# 👉 항상 보이게 (핵심 수정)
+st.link_button("오픈챗 상담", "https://open.kakao.com/o/sruGURAg")
+st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
 
 # -------------------------
 # 주요골격
@@ -180,9 +175,7 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-# -------------------------
 # 안내문
-# -------------------------
 st.markdown("""
 <div style="font-size:14px;">
 <span style="color:red; font-weight:bold;">
