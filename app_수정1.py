@@ -146,24 +146,35 @@ if clicked:
 """)
 
 # 👉 항상 보이게 (핵심 수정)
-#st.link_button("오픈챗 상담", "https://open.kakao.com/o/sruGURAg")
-#st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
 
 st.markdown("""
-<div style="display:flex; gap:10px; margin-top:10px;">
-<a href="https://open.kakao.com/o/sruGURAg" target="_blank"
-style="flex:1; text-align:center; padding:12px; background-color:#00c73c; color:white; 
-text-decoration:none; border-radius:8px; font-weight:bold;">
-오픈챗 상담
-</a>
+<style>
+div.stLinkButton > a:first-child {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
 
-<a href="https://open.kakao.com/o/sruGURAg" target="_blank"
-style="flex:1; text-align:center; padding:12px; background-color:#ff5722; color:white; 
-text-decoration:none; border-radius:8px; font-weight:bold;">
-평가서 발행 요청
-</a>
-</div>
+/* 첫번째 버튼 (상담) */
+div.stLinkButton:nth-of-type(1) a {
+    background-color: #00c73c !important;
+    color: white !important;
+}
+
+/* 두번째 버튼 (발행) */
+div.stLinkButton:nth-of-type(2) a {
+    background-color: #ff5722 !important;
+    color: white !important;
+}
+</style>
 """, unsafe_allow_html=True)
+
+
+st.link_button("오픈챗 상담", "https://open.kakao.com/o/sruGURAg")
+st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
+
 
 # -------------------------
 # 주요골격
