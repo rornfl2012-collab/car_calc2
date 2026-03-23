@@ -106,7 +106,7 @@ def get_col(value):
 # -------------------------
 # UI
 # -------------------------
-st.markdown(f"<h2 style='font-size:{TITLE_SIZE}px;'>격락손해 계산기<br>(모바일 가능)</h2>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='font-size:{TITLE_SIZE}px;'>격락손해[가치하락] 계산기<br>(모바일 가능)</h2>", unsafe_allow_html=True)
 
 accident_date = st.date_input("사고일자")
 car = st.text_input("차량명")
