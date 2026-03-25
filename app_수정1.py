@@ -174,6 +174,9 @@ div.stLinkButton:nth-of-type(2) a {
 
 st.link_button("오픈챗 단순무료상담", "https://open.kakao.com/o/sruGURAg")
 #st.link_button("평가서 발행 요청...", "https://open.kakao.com/o/sruGURAg")
+<span style="color:red; font-weight:bold;">
+※ 본 계산기를 통해 산출된 격락손해 금액은 참고용 예상치로, 법적 효력을 가지지 않습니다.
+</span><br>
 
 # -------------------------
 # 주요골격
