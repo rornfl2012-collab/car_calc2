@@ -178,14 +178,20 @@ st.link_button("오픈챗 무료상담", "https://open.kakao.com/o/sruGURAg")
 st.markdown("""
 <div style="
     font-size:14px;
-    color:gray;
+    color:black;
     text-align:left;
-    #text-decoration:underline;
+    text-decoration:underline;
     white-space:nowrap;
 ">
 ※ 문의 Top5<br>
 1. 내차도 격락손해금 받을수 있나요.<br>
-2.eddede<br>
+2. 얼마 받을 수 있나요<br>
+3. 보험사에서 조건이 안된다는데
+4. 수리비 얼마 이상이면 인정되나요
+5. 사고 나면 무조건 받나요
+6. 청구가능기간이 있나요
+7. 나홀로소송? 대리인 통해서?
+8. 소송하면 실익이 있을까요
 
 </div>
 """, unsafe_allow_html=True)
