@@ -173,7 +173,7 @@ div.stLinkButton:nth-of-type(2) a {
 
 
 st.link_button("오픈챗 상담", "https://open.kakao.com/o/sruGURAg")
-st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
+#st.link_button("평가서 발행 요청", "https://open.kakao.com/o/sruGURAg")
 
 
 # -------------------------
