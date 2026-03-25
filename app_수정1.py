@@ -180,7 +180,7 @@ st.markdown("""
     font-size:14px;
     color:gray;
     text-align:left;
-    text-decoration:underline;
+    #text-decoration:underline;
     white-space:nowrap;
 ">
 ※ 문의 Top5<br>
