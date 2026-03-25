@@ -163,11 +163,11 @@ div.stLinkButton:nth-of-type(1) a {
     color: white !important;
 }
 
-#/* 두번째 버튼 (발행) */
-#div.stLinkButton:nth-of-type(2) a {
-#    background-color: #ff5722 !important;
-#    color: white !important;
-#}
+/* 두번째 버튼 (발행) */
+div.stLinkButton:nth-of-type(2) a {
+    background-color: #ff5722 !important;
+    color: white !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
