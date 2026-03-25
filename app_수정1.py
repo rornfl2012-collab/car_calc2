@@ -183,7 +183,10 @@ st.markdown("""
     text-decoration:underline;
     white-space:nowrap;
 ">
-※ 간단 문의는 무료로 진행됩니다
+※ 문의 Top5<br>
+1. 내차도 격락손해금 받을수 있나요.<br>
+2.eddede<br>
+
 </div>
 """, unsafe_allow_html=True)
 
