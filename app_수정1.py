@@ -172,7 +172,7 @@ div.stLinkButton:nth-of-type(2) a {
 """, unsafe_allow_html=True)
 
 
-st.link_button("오픈챗 무료상담", "https://open.kakao.com/o/sruGURAg")
+st.link_button("오픈챗 무료상담(무엇이든 질문)", "https://open.kakao.com/o/sruGURAg")
 #st.link_button("평가서 발행 요청...", "https://open.kakao.com/o/sruGURAg")
 
 st.markdown("""
