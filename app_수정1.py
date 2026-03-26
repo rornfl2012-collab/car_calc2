@@ -239,7 +239,7 @@ st.markdown("""
 상단의[상담신청]을 통해 문의해주시기 바랍니다.
 </div>
 """, unsafe_allow_html=True)
-st.link_button("📩 상담 신청하기", "폼링크")
+st.link_button("📩 상담 신청하기", "https://forms.gle/sMkcQEnb2T2uMX3P9")
 
 import pandas as pd
 
