@@ -245,7 +245,7 @@ import pandas as pd
 
 st.markdown("## 📋 문의 게시판")
 
-url = "https://docs.google.com/spreadsheets/d/1J6IBoU5FnBRJq3BbcXFE7NM564o3O5DbO2Hrktn2IHc/edit?usp=sharing"
+url = "https://docs.google.com/spreadsheets/d/1J6IBoU5FnBRJq3BbcXFE7NM564o3O5DbO2Hrktn2IHc/export?format=csv"
 df = pd.read_csv(url)
 
 # 최신순 정렬
