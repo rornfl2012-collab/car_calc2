@@ -243,7 +243,7 @@ st.link_button("📩 상담 신청하기", "https://forms.gle/s2bwCaTViDnsAiwu5"
 
 import pandas as pd
 
-st.markdown("## 📋 실시간 문의게시판")
+st.markdown("## 📋 문의 게시판")
 
 url = "https://docs.google.com/spreadsheets/d/1J6IBoU5FnBRJq3BbcXFE7NM564o3O5DbO2Hrktn2IHc/export?format=csv"
 df = pd.read_csv(url)
