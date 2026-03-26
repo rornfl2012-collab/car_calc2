@@ -239,13 +239,13 @@ st.markdown("""
 상단의[상담신청]을 통해 문의해주시기 바랍니다.
 </div>
 """, unsafe_allow_html=True)
-st.link_button("📩 상담 신청하기", "https://docs.google.com/spreadsheets/d/1oyiIgQluN_ip51kY7LZ_5Tkjc2i7Hc0KtZYYr3ZxrbE/edit?usp=sharing")
+st.link_button("📩 상담 신청하기", "폼링크")
 
 import pandas as pd
 
 st.markdown("## 📋 문의 게시판")
 
-url = "여기에 CSV 링크 넣기"
+url = "https://docs.google.com/spreadsheets/d/1oyiIgQluN_ip51kY7LZ_5Tkjc2i7Hc0KtZYYr3ZxrbE/edit?usp=sharing"
 df = pd.read_csv(url)
 
 # 최신순 정렬
