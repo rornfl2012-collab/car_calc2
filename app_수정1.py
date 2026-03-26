@@ -255,8 +255,8 @@ df = df[::-1]
 df = df.head(10)
 
 for i in range(len(df)):
-    name = str(df.iloc[i]['이름'])[0] + "*"
-    car = df.iloc[i]['차량명']
+    name = str(df.iloc[i]['차량모델'])[0] + "*"
+    #car = df.iloc[i]['차량명']
     question = df.iloc[i]['문의내용']
     answer = df.iloc[i]['답변']
     status = df.iloc[i]['상태']
