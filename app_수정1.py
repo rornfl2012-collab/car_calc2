@@ -183,7 +183,7 @@ st.markdown("""
     text-decoration:underline;
     white-space:nowrap;
 ">
-※ 문의 Top5<br>
+※ 문의 Top8<br>
 1. 내차도 격락손해금 받을수 있나요.<br>
 2. 얼마 받을 수 있나요<br>
 3. 보험사에서 조건이 안된다는데<br>
