@@ -239,3 +239,32 @@ st.markdown("""
 상단의[상담신청]을 통해 문의해주시기 바랍니다.
 </div>
 """, unsafe_allow_html=True)
+
+
+import pandas as pd
+
+st.markdown("## 📋 문의 게시판")
+
+url = "여기에 CSV 링크 넣기"
+df = pd.read_csv(url)
+
+# 최신순 정렬
+df = df[::-1]
+
+# 최근 10개만 표시
+df = df.head(10)
+
+for i in range(len(df)):
+    name = str(df.iloc[i]['이름'])[0] + "*"
+    car = df.iloc[i]['차량명']
+    question = df.iloc[i]['문의내용']
+    answer = df.iloc[i]['답변']
+    status = df.iloc[i]['상태']
+
+    with st.expander(f"🚗 {car} | {name}"):
+        st.write(f"문의: {question}")
+
+        if pd.notna(answer):
+            st.success(f"답변: {answer}")
+        else:
+            st.warning("⏳ 답변 대기중")
