@@ -172,8 +172,23 @@ div.stLinkButton:nth-of-type(2) a {
 """, unsafe_allow_html=True)
 
 
-st.link_button("오픈챗 무료상담(무엇이든 질문)", "https://open.kakao.com/o/sruGURAg")
+#st.link_button("오픈챗 무료상담(무엇이든 질문)", "https://open.kakao.com/o/sruGURAg")
 #st.link_button("평가서 발행 요청...", "https://open.kakao.com/o/sruGURAg")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.link_button(
+        "오픈챗 무료상담",
+        "https://open.kakao.com/o/sruGURAg"
+    )
+
+with col2:
+    st.link_button(
+        "📞 상담연결",
+        "tel:01077525758"  # ← 여기에 본인 전화번호 넣기
+    )
+
 
 st.markdown("""
 <div style="
